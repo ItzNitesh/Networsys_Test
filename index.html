@@ -11,7 +11,8 @@
 
     <!-- Bootsrap css -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
     <!-- font asm -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -22,16 +23,63 @@
 
     <!-- Navabar -->
     <div class="here-nav">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="./asstes/images/logo/Logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <div class="d-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="./asstes/images/logo/Logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Solution</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-white text-blue px-3 rounded" aria-current="page" href="!#"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link bg-white text-blue px-3 rounded" aria-current="page" href="#">Signup</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="sm-nav sm-nav-bg">
+            <nav class="navbar  fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./asstes/images/logo/Logo.svg" alt="" ></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                  </button>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                       <img src="./asstes/images/logo/logo2.svg" alt="">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Solution</a>
                         </li>
@@ -46,24 +94,24 @@
                             <a class="nav-link" aria-current="page" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-white text-blue px-3 rounded" aria-current="page" href="!#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+                            <a class="nav-link text-blue" aria-current="page" href="!#"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link bg-white text-blue px-3 rounded" aria-current="page" href="#">Signup</a>
+                            <a class="nav-link text-blue" aria-current="page" href="#">Signup</a>
                         </li>
-                    </ul>
-                    <!-- <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
+                      </ul>
+                      
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </nav>
+              </nav>
+        </div>
 
         <div class="container py-5">
             <div class="row hero-section">
-                <div class="col-xl-6 mt-3 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 d-flex align-items-center">
                     <div>
                         <h1 class="fw-bold text-white">SaaS Delivery <br> Management <br> Software</h1>
                         <p class="text-white">Track and Optimize routes in real-time</p>
@@ -75,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 mt-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 hero-secton-img">
                     <img src="./asstes/images/img/banner-desktop.png" alt="" width="100%" height="100%">
                 </div>
             </div>
@@ -85,27 +133,27 @@
     <section class="brand-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-2 mt-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 mt-3">
                     <div class="brand-img">
                         <img src="./asstes/images/brands/1mg1.png" alt="" width="100%">
                     </div>
                 </div>
-                <div class="col-xl-2 mt-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 mt-3">
                     <div class="brand-img">
                         <img src="./asstes/images/brands/820_puma.jpg" alt="" width="100%">
                     </div>
                 </div>
-                <div class="col-xl-2 mt-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 mt-3">
                     <div class="brand-img">
                         <img src="./asstes/images/brands/bewakoof.png" alt="" width="100%">
                     </div>
                 </div>
-                <div class="col-xl-2 mt-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 mt-3">
                     <div class="brand-img">
                         <img src="./asstes/images/brands/nykaa.png" alt="" width="100%">
                     </div>
                 </div>
-                <div class="col-xl-2 mt-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 mt-3">
                     <div class="brand-img">
                         <img src="./asstes/images/brands/pharmeasy.png" alt="" width="100%">
                     </div>
@@ -123,28 +171,28 @@
                 <h2 class="text-center fw-bold heading-color">Solution for every delivery</h2>
             </div>
             <div class="row">
-                <div class="col-xl-3 mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt-5">
                     <div class="text-center h-100 solution-card p-3 rounded-3">
                         <img src="./asstes/images/icons/Food.svg" alt="" width="80px" height="80px">
                         <h4 class="fw-medium text-blue">Food</h4>
                         <p>Leverage Agile Frameworks Provide a robust synopsys high level overview.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt-5">
                     <div class="text-center h-100 solution-card p-3 rounded-3">
                         <img src="./asstes/images/icons/Grocery.svg" alt="" width="80px" height="80px">
                         <h4 class="fw-medium text-blue">Grocery</h4>
                         <p>Bring to the table win-win survival stratigies to ensure proactive dominations.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt-5">
                     <div class="text-center h-100 solution-card p-3 rounded-3">
                         <img src="./asstes/images/icons/Courier.svg" alt="" width="80px" height="80px">
                         <h4 class="fw-medium text-blue">Courier</h4>
                         <p>Organically grows the hollis world view of disrupted innovation via workplace.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt-5">
                     <div class="text-center h-100 solution-card p-3 rounded-3">
                         <img src="./asstes/images/icons/Logistics.svg" alt="" width="80px" height="80px">
                         <h4 class="fw-medium text-blue">Logistics</h4>
@@ -163,7 +211,7 @@
             </div>
 
             <div class="tabs mt-5">
-                <div class="tab-buttons d-flex justify-content-center gap-3">
+                <div class="tab-buttons d-flex justify-content-center gap-3 flex-wrap">
                     <button class="tab-button active" onclick="openTab(event, 'tab1')"><img
                             src="./asstes/images/icons/add.svg" alt=""> Dashboard</button>
                     <button class="tab-button" onclick="openTab(event, 'tab2')"><img src="./asstes/images/icons/add.svg"
@@ -194,27 +242,30 @@
                 <h2 class="text-center text-white">All In one Real Time <br> final mile delivery solutions</h2>
             </div>
 
-            <div class="row" style="position: relative;">
+            <div class="row justify-content-center" style="position: relative;">
                 <!-- <img src="./asstes/images/icons/competitive-price.svg" alt=""> -->
-                <div class="col-xl-4 mt-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                     <div class="text-center">
                         <img src="./asstes/images/icons/real-time.svg" alt="" width="80px" height="80px">
                         <h4 class="text-white mt-3">Real Time Tracking</h4>
-                        <p class="text-white">By adopting real time delivery tracking software final mile delivery management has become</p>
+                        <p class="text-white">By adopting real time delivery tracking software final mile delivery
+                            management has become</p>
                     </div>
                 </div>
-                <div class="col-xl-4 mt-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                     <div class="text-center">
                         <img src="./asstes/images/icons/delivery.svg" alt="" width="80px" height="80px">
                         <h4 class="text-white mt-3">Real Time Tracking</h4>
-                        <p class="text-white">By adopting real time delivery tracking software final mile delivery management has become</p>
+                        <p class="text-white">By adopting real time delivery tracking software final mile delivery
+                            management has become</p>
                     </div>
                 </div>
-                <div class="col-xl-4 mt-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
                     <div class="text-center">
                         <img src="./asstes/images/icons/bell.svg" alt="" width="80px" height="80px">
                         <h4 class="text-white mt-3">Real Time Tracking</h4>
-                        <p class="text-white">By adopting real time delivery tracking software final mile delivery management has become</p>
+                        <p class="text-white">By adopting real time delivery tracking software final mile delivery
+                            management has become</p>
                     </div>
                 </div>
             </div>
@@ -231,61 +282,81 @@
 
             <div class="accordion mt-5" id="accordionExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button heading-color fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What is SaaS ?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium maiores natus, doloremque velit dignissimos.
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button heading-color fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is SaaS ?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur
+                            mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam
+                            repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis
+                            quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium
+                            maiores natus, doloremque velit dignissimos.
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, natus?
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium maiores natus, doloremque velit dignissimos.
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, natus?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur
+                            mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam
+                            repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis
+                            quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium
+                            maiores natus, doloremque velit dignissimos.
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, enim.
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium maiores natus, doloremque velit dignissimos.
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, enim.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quasi consequuntur
+                            mollitia eos, voluptates iste? Beatae, vel error! Voluptatibus deserunt ea iste veniam
+                            repudiandae atque voluptatem pariatur. Eum, qui commodi facere quos neque saepe facilis
+                            quaerat excepturi consequuntur atque mollitia deleniti libero dolorum error, praesentium
+                            maiores natus, doloremque velit dignissimos.
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </div>
     </section>
 
     <section class="make-deffrent">
         <div class="container py-5" style="position: relative;">
             <div class="row">
-                <div class="col-xl-6 mt-3">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-lg-12 mt-3 d-md-none">
                     <img src="./asstes/images/img/building.png" alt="" width="100%" height="auto" class="rounded-3">
                 </div>
-                <div class="col-xl-6 mt-3">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-lg-12 mt-3">
                     <div>
                         <h1>What Make Us Different</h1>
-                        <p>Check out our best services you can possibly orders in building your company and don't forget to ask via out email or our customer service if you are in interesting in using our services</p>
+                        <p>Check out our best services you can possibly orders in building your company and don't forget
+                            to ask via out email or our customer service if you are in interesting in using our services
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="row px-3 pb-5 pt-3 rounded-3 make-deffrent-card">
-                <div class="col-xl-3 mt-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
                     <div>
                         <img src="./asstes/images/icons/Suitcase.svg" alt="">
                         <h4 class="mt-3">Experienced</h4>
@@ -293,7 +364,7 @@
                         <a href="#" class="text-decoration-none">Learn More</a>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
                     <div>
                         <img src="./asstes/images/icons/Suitcase.svg" alt="">
                         <h4 class="mt-3">Experienced</h4>
@@ -301,7 +372,7 @@
                         <a href="#" class="text-decoration-none">Learn More</a>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
                     <div>
                         <img src="./asstes/images/icons/Suitcase.svg" alt="">
                         <h4 class="mt-3">Experienced</h4>
@@ -309,7 +380,7 @@
                         <a href="#" class="text-decoration-none">Learn More</a>
                     </div>
                 </div>
-                <div class="col-xl-3 mt-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-3">
                     <div>
                         <img src="./asstes/images/icons/Suitcase.svg" alt="">
                         <h4 class="mt-3">Experienced</h4>
@@ -324,16 +395,17 @@
     <section class="bg-blue">
         <div class="container pt-5">
             <div class="row">
-                <div class="col-xl-6 mt-3 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-3 d-flex align-items-center p-md-4 text-md-center">
                     <div>
                         <h1 class="text-white fw-medium">Advance Fleet Tracking Solution Tracker</h1>
-                        <div class="d-flex gap-5 mt-5">
+                        <div class="d-flex gap-5 mt-5 text-md-center justify-content-center">
                             <a href="#" class="text-decoration-none text-white fw-bold">Get Started</a>
-                            <a href="#" class="text-decoration-none fw-bold text-white"><img src="/asstes/images/icons/Play.svg" alt=""> Watch how it works</a>
+                            <a href="#" class="text-decoration-none fw-bold text-white"><img
+                                    src="/asstes/images/icons/Play.svg" alt=""> Watch how it works</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 d-flex justify-content-end mt-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end mt-3 d-none d-xl-block d-md-none d-lg-block">
                     <img src="./asstes/images/img/tracking-user1.png" alt="" width="60%" height="100%">
                 </div>
             </div>
@@ -342,112 +414,121 @@
 
     <footer class="pt-5">
         <div class="container px-5">
-          <div class="row">
-            <div class="col-6 col-lg-4">
-              <img src="./asstes/images/logo/logo2.svg" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae minima consequatur quaerat distinctio assumenda!</p>
-            </div>
-            <div class="col">
-              <h4 class="heading-color fw-bold">Product</h4>
-              <ul class="list-unstyled pt-2">
-                <li class="py-1 heading-color">Feature</li>
-                <li class="py-1 heading-color">Api</li>
-                <li class="py-1 heading-color">Solution</li>
-                
-              </ul>
-            </div>
-            <div class="col">
-              <h4 class="heading-color fw-bold">Company</h4>
-              <ul class="list-unstyled pt-2">
-                <li class="py-1 heading-color">About Us</li>
-                <li class="py-1 heading-color">Blog</li>
-                <li class="py-1 heading-color">Contact Us</li>
-              </ul>
-            </div>
-            <div class="col">
-              <h4 class="heading-color fw-bold">Support</h4>
-              <ul class="list-unstyled pt-2">
-                <li class="py-1 heading-color">Support Center</li>
-                <li class="py-1 heading-color">Systme Status</li>
-                <li class="py-1 heading-color">Language</li>
-              </ul>
-            </div>
-            <div class="col-6 col-lg-3 d-flex justify-content-center">
-             <div>
-                <h4 class="heading-color fw-bold">Follow Us</h4>
-                <div class="d-flex gap-3 ">
-                  <div class=" ">
-                      <img src="./asstes/images/social-icons/Facebook.svg" alt="">
-                    </div>
-                    <div class="">
-                      <img src="./asstes/images/social-icons/Instagram.svg" alt="">
-                    </div>
-                    <div class="">
-                      <img src="./asstes/images/social-icons/Twitter.svg" alt="">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <img src="./asstes/images/logo/logo2.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae minima consequatur quaerat
+                        distinctio assumenda!</p>
+                </div>
+                <div class="col">
+                    <h4 class="heading-color fw-bold">Product</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1 heading-color">Feature</li>
+                        <li class="py-1 heading-color">Api</li>
+                        <li class="py-1 heading-color">Solution</li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="heading-color fw-bold">Company</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1 heading-color">About Us</li>
+                        <li class="py-1 heading-color">Blog</li>
+                        <li class="py-1 heading-color">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="heading-color fw-bold">Support</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1 heading-color">Support Center</li>
+                        <li class="py-1 heading-color">Systme Status</li>
+                        <li class="py-1 heading-color">Language</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 d-flex justify-content-center">
+                    <div>
+                        <h4 class="heading-color fw-bold">Follow Us</h4>
+                        <div class="d-flex gap-3 ">
+                            <div class=" ">
+                                <img src="./asstes/images/social-icons/Facebook.svg" alt="">
+                            </div>
+                            <div class="">
+                                <img src="./asstes/images/social-icons/Instagram.svg" alt="">
+                            </div>
+                            <div class="">
+                                <img src="./asstes/images/social-icons/Twitter.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
-             </div>
-          </div>
-          
-        </div>
-      </footer>
-      
-      
-<!-- modal box -->
-<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body">
-         <form action="" class="row">
-            <h3 class="text-center">Fill Your From</h3>
-            <div class="mt-3 col-xl-6">
-                <label class="heading-color fw-medium" for="name">First Name</label>
-                <input type="text" name="f_name" id="f_name" placeholder="Enter First Name" class="w-100 py-2 px-3 border rounded">
-            </div>
-            <div class="mt-3 col-xl-6">
-                <label class="heading-color fw-medium" for="name">Last Name</label>
-                <input type="text" name="l_name" id="l_name" placeholder="Enter Last Name" class="w-100 py-2 px-3 border rounded">
-            </div>
-            <div class="mt-3 col-xl-6">
-                <label class="heading-color fw-medium" for="phone">Phone No.</label>
-                <input type="number" name="phone" id="phone" placeholder="Enter Phone No." class="w-100 py-2 px-3 border rounded">
-            </div>
-            <div class="mt-3 col-xl-6">
-                <label class="heading-color fw-medium" for="email">Email Id</label>
-                <input type="email" name="email" id="email" placeholder="Enter Email Id" class="w-100 py-2 px-3 border rounded">
             </div>
 
-            <div class="col-xl-12 mt-3">
-                <label class="heading-color fw-medium" for="message">Message</label>
-                <textarea name="message" id="message" class="w-100 py-2 px-3 border rounded" rows="4" placeholder="Drop Message"></textarea>
-            </div>
-            <div class="col-xl-3 mt-3">
-                <button class="btn bg-blue w-100 text-white py-2" id="submitForm">Submit</button>
-            </div>
-         </form>
         </div>
-        <!-- <div class="modal-footer">
+    </footer>
+
+
+    <!-- modal box -->
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <form action="" class="row">
+                        <h3 class="text-center">Fill Your From</h3>
+                        <div class="mt-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <label class="heading-color fw-medium" for="name">First Name</label>
+                            <input type="text" name="f_name" id="f_name" placeholder="Enter First Name"
+                                class="w-100 py-2 px-3 border rounded">
+                        </div>
+                        <div class="mt-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <label class="heading-color fw-medium" for="name">Last Name</label>
+                            <input type="text" name="l_name" id="l_name" placeholder="Enter Last Name"
+                                class="w-100 py-2 px-3 border rounded">
+                        </div>
+                        <div class="mt-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <label class="heading-color fw-medium" for="phone">Phone No.</label>
+                            <input type="number" name="phone" id="phone" placeholder="Enter Phone No."
+                                class="w-100 py-2 px-3 border rounded">
+                        </div>
+                        <div class="mt-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <label class="heading-color fw-medium" for="email">Email Id</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email Id"
+                                class="w-100 py-2 px-3 border rounded">
+                        </div>
+
+                        <div class="col-xl-12 mt-3">
+                            <label class="heading-color fw-medium" for="message">Message</label>
+                            <textarea name="message" id="message" class="w-100 py-2 px-3 border rounded" rows="4"
+                                placeholder="Drop Message"></textarea>
+                        </div>
+                        <div class="col-xl-3 mt-3">
+                            <button class="btn bg-blue w-100 text-white py-2" id="submitForm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  
 
-     <!-- script js -->
-     <script src="./asstes/js/script.js"></script>
+
+    <!-- script js -->
+    <script src="./asstes/js/script.js"></script>
 
     <!-- Bootsrap js -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
 
-   
+
 </body>
 
 </html>
