@@ -130,7 +130,8 @@ h1, h2, h3, h4, h5, h6{
     background-color: #fffcfccc;
     position: absolute;
     top: 30%;
-    max-width: 80%;
+    width: 80%;
+    width: 100%;
     right: 10%;
   }
 
@@ -146,4 +147,74 @@ h1, h2, h3, h4, h5, h6{
     border: 6px solid #5457db !important;
     border-radius: 10px;
     padding: 10px;
+  }
+
+  .hero-secton-img img{
+    object-fit: contain;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .here-nav {
+        background-color: #5457db;
+        height: 100%;
+        /* clip-path: polygon(0 0, 100% 0%, 100% 62%, 0% 100%); */
+        clip-path: none;
+    }
+    
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .tab-content img{
+        width: 100%;
+    }
+    .traking-section{
+        clip-path: none;
+    }
+  }
+
+  .sm-nav{
+    display: none;
+  }
+
+  @media screen and (max-width:995px){
+    .d-nav{
+        display: none !important;
+    }
+
+    .sm-nav{
+        display: block;
+    }
+
+    .sm-nav .navbar-brand img{
+        width: 100%;
+    }
+
+    .sm-nav .nav-item a{
+        color: #2e526c;
+    }
+
+    .hero-section {
+        padding-top: 40px;
+    }
+
+    .offcanvas{
+        max-width: 65% !important;
+    }
+  }
+
+  @media screen and (max-width:1280px){
+    .make-deffrent-card{
+        position: static;
+        width: 100% !important;
+    }
+  }
+
+  .sm-nav-bg{
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }

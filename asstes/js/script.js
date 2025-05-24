@@ -39,3 +39,13 @@ document.getElementById("submitForm").addEventListener("click", function () {
         alert("Form submitted successfully!");
     }
 });
+
+
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('.sm-nav');
+    if (window.scrollY > 0) {
+      nav.classList.add('sm-nav-bg');
+    } else {
+      nav.classList.remove('sm-nav-bg');
+    }
+  });
